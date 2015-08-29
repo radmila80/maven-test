@@ -13,6 +13,12 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
+  
+  <scm>
+        <connection>scm:git:https://github.com/radmila80/maven-test</connection>
+        <developerConnection>scm:git:https://github.com/radmila80/maven-test</developerConnection>
+        <url>https://github.com/radmila80/maven-test</url>
+  </scm>
 
   <dependencies>
     <dependency>
@@ -53,7 +59,7 @@
                 </plugin>
                 <plugin>
                     <artifactId>maven-release-plugin</artifactId>
-                    <version>2.4.1</version>
+                    <version>2.5.2</version>
                 </plugin>
            </plugins>
 		</pluginManagement>
