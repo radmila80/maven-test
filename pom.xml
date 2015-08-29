@@ -17,14 +17,26 @@
         <connection>scm:git:https://github.com/radmila80/maven-test</connection>
         <developerConnection>scm:git:https://github.com/radmila80/maven-test</developerConnection>
         <url>https://github.com/radmila80/maven-test</url>
-    <tag>HEAD</tag>
+    	<tag>HEAD</tag>
   </scm>
   
   <distributionManagement>
     <repository>
-          <id>myrepository</id>
-          <url>file:C:/repository/</url>
+          <id>internal</id>
+          <name>internal</name>
+          <url>file:C:/repositories/releases/</url>
     </repository>
+    <snapshotRepository>
+        <id>internal.snapshots</id>
+        <name>internal snapshots</name>
+        <url>file:C:/repositories/snapshots</url>
+        <uniqueVersion>true</uniqueVersion>
+    </snapshotRepository>
+    <!--  <site> 
+            <id>sites</id>
+            <name>default sites site</name>
+            <url>dav:http://nexus.nbme.org/nexus/content/sites/sites/${project.groupId}/${project.artifactId}/${project.version}</url>
+        </site> -->
   </distributionManagement>
 
   <dependencies>
