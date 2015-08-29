@@ -19,6 +19,13 @@
         <developerConnection>scm:git:https://github.com/radmila80/maven-test</developerConnection>
         <url>https://github.com/radmila80/maven-test</url>
   </scm>
+  
+  <distributionManagement>
+    <repository>
+          <id>myrepository</id>
+          <url>file:C:/repository/</url>
+    </repository>
+  </distributionManagement>
 
   <dependencies>
     <dependency>
