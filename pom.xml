@@ -14,9 +14,9 @@
   </properties>
   
   <scm>
-        <connection>scm:git:https://github.com/radmila80/maven-test</connection>
-        <developerConnection>scm:git:https://github.com/radmila80/maven-test</developerConnection>
-        <url>https://github.com/radmila80/maven-test</url>
+        <connection>scm:git:https://github.com/radmila80/maven-test.git</connection>
+        <developerConnection>scm:git:https://github.com/radmila80/maven-test.git</developerConnection>
+        <url>https://github.com/radmila80/maven-test.git</url>
     	<tag>HEAD</tag>
   </scm>
   
