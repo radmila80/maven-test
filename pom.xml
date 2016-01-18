@@ -20,6 +20,15 @@
     	<tag>HEAD</tag>
   </scm>
   
+  <profiles>
+    <profile>
+        <id>production-release-config</id>
+        <properties>
+            <branchName>release-${parsedVersion.majorVersion}.${parsedVersion.minorVersion}.X</branchName>
+            <tag>${project.artifactId}-${project.version}-production</tag>
+        </properties>
+    </profile>
+	</profiles>
   <distributionManagement>
     <repository>
           <id>internal</id>
@@ -50,6 +59,11 @@
   
   <build>
 		<plugins>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>build-helper-maven-plugin</artifactId>
+				<version>1.10</version>
+			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-jar-plugin</artifactId>
