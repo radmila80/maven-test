@@ -49,11 +49,11 @@
   </distributionManagement>
 
   <dependencies>
-  <!--<dependency>
+  <dependency>
 	<groupId>com.rada</groupId>
 	<artifactId>maven-dep1</artifactId>
 	<version>0.0.3-SNAPSHOT</version>
-  </dependency>-->
+  </dependency>
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
